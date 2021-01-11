@@ -1,0 +1,2690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainPage</class>
+ <widget class="QMainWindow" name="MainPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>847</width>
+    <height>769</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <family>Times New Roman</family>
+    <pointsize>20</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>LABELLAB</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(222, 255, 249);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="App">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:url(:/images/images/bg.jpg)
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="Uygulama">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background:url(:/images/images/bg.jpg)</string>
+       </property>
+       <widget class="QWidget" name="horizontalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>781</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="AnaSayfa">
+           <property name="minimumSize">
+            <size>
+             <width>101</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#AnaSayfa
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#AnaSayfa:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+           </property>
+           <property name="text">
+            <string>AnaSayfa</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Alinan_Ilanlar">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>101</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#Alinan_Ilanlar
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Alinan_Ilanlar:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+           </property>
+           <property name="text">
+            <string>Alınan İlanlar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Profil">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>101</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#Profil
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Profil:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+           </property>
+           <property name="text">
+            <string>Profil</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="IlanVer">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>101</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#IlanVer
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#IlanVer:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+           </property>
+           <property name="text">
+            <string>İlan Ver</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Ilanlar">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>101</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#Ilanlar
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Ilanlar:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+           </property>
+           <property name="text">
+            <string>İlanlar</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Veri_Etiket">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>101</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#Veri_Etiket
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Veri_Etiket:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+           </property>
+           <property name="text">
+            <string>Veriseti Etiketle</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Verilen_Ilanlar">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>101</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#Verilen_Ilanlar
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Verilen_Ilanlar:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+           </property>
+           <property name="text">
+            <string>Verilen İlanlar</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QStackedWidget" name="Sayfalar">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>761</width>
+          <height>581</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <widget class="QWidget" name="Ana_Sayfa">
+         <widget class="QPushButton" name="Cikis">
+          <property name="geometry">
+           <rect>
+            <x>550</x>
+            <y>520</y>
+            <width>201</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#Cikis
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Cikis:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+          </property>
+          <property name="text">
+           <string>Çıkış</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="AlinanIlanlar_Sayfa">
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>741</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 75 20pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 20px;
+border-color: blue;
+font: italic bold 25px;
+min-width: 10em;
+padding: 16px;</string>
+          </property>
+          <property name="text">
+           <string>ALINAN İLANLAR</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget_3">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>130</y>
+            <width>681</width>
+            <height>196</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QComboBox" name="comboBox">
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="A_I_Ara">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#A_I_Ara
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#A_I_Ara:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+             </property>
+             <property name="text">
+              <string>Seç</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QPushButton" name="Upload">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>520</y>
+            <width>231</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#Upload
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Upload:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+          </property>
+          <property name="text">
+           <string>İlanı Tamamla</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="Sonuc_2">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>340</y>
+            <width>681</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#Sonuc_2
+{
+
+background:rgb(255, 255, 255)
+
+}</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="Profil_Sayfa">
+         <widget class="QLabel" name="PP">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>110</y>
+            <width>241</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#PP
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 5px;
+border-radius: 30px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QWidget" name="formLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>110</y>
+            <width>361</width>
+            <height>79</height>
+           </rect>
+          </property>
+          <layout class="QFormLayout" name="formLayout_3">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_7">
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Ad:           </string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="ad_bilgi">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#ad_bilgi
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_8">
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Soyad:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="soyad_bilgi">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#soyad_bilgi
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="formLayoutWidget_3">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>260</y>
+            <width>361</width>
+            <height>37</height>
+           </rect>
+          </property>
+          <layout class="QFormLayout" name="formLayout_4">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_10">
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Mail:         </string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="mail_bilgi">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#mail_bilgi
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>200</y>
+            <width>361</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_9">
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>16</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>İLETİŞİM BİLGİLERİ</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget_4">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>460</y>
+            <width>711</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QPushButton" name="Verilmis_Ilan_Gor">
+             <property name="styleSheet">
+              <string notr="true">#Verilmis_Ilan_Gor
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Verilmis_Ilan_Gor:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+             </property>
+             <property name="text">
+              <string>Verilmiş İlanlar</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Alinmis_Ilan_Gor">
+             <property name="styleSheet">
+              <string notr="true">#Alinmis_Ilan_Gor
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Alinmis_Ilan_Gor:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+             </property>
+             <property name="text">
+              <string>Alınmış İlanlar</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>741</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 75 20pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 20px;
+border-color: blue;
+font: italic bold 25px;
+min-width: 10em;
+padding: 16px;</string>
+          </property>
+          <property name="text">
+           <string>PROFİL</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Change_Profile">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>350</y>
+            <width>181</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#Change_Profile
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 4em;
+padding: 6px;
+
+}
+#Change_Profile:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+          </property>
+          <property name="text">
+           <string>Profil Fotoğrafı Değiştir</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="formLayoutWidget_9">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>310</y>
+            <width>361</width>
+            <height>143</height>
+           </rect>
+          </property>
+          <layout class="QFormLayout" name="formLayout_9">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_6">
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Hakkımda:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QTextEdit" name="Hakkimda">
+             <property name="styleSheet">
+              <string notr="true">#Hakkimda
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="AboutMe">
+             <property name="styleSheet">
+              <string notr="true">#AboutMe
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 4em;
+padding: 6px;
+
+}
+#AboutMe:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+             </property>
+             <property name="text">
+              <string>Onayla</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="IlanVer_Sayfa">
+         <widget class="QLabel" name="label_12">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>50</y>
+            <width>741</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 75 20pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 20px;
+border-color: blue;
+font: italic bold 25px;
+min-width: 10em;
+padding: 16px;</string>
+          </property>
+          <property name="text">
+           <string>İLAN VER</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="formLayoutWidget_4">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>150</y>
+            <width>451</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <layout class="QFormLayout" name="formLayout_5">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_13">
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>İlan:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QTextEdit" name="Ilan_bilgi">
+             <property name="styleSheet">
+              <string notr="true">#Ilan_bilgi
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+</string>
+             </property>
+             <property name="html">
+              <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman'; font-size:14px; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="formLayoutWidget_5">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>360</y>
+            <width>451</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <layout class="QFormLayout" name="formLayout_6">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_14">
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Resim Başına Ödenecek Ücret:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="RBU_bilgi">
+             <property name="styleSheet">
+              <string notr="true">#RBU_bilgi
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="formLayoutWidget_6">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>420</y>
+            <width>451</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <layout class="QFormLayout" name="formLayout_7">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_15">
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Son Teslim Tarihi                    :</string>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QDateEdit" name="STT">
+             <property name="styleSheet">
+              <string notr="true">#STT
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="formLayoutWidget_7">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>470</y>
+            <width>451</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <layout class="QFormLayout" name="formLayout_8">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_16">
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Veri Seti                                  :</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="VeriSeti_bilgi">
+             <property name="styleSheet">
+              <string notr="true">#VeriSeti_bilgi
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QPushButton" name="Ilan_btn">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>150</y>
+            <width>211</width>
+            <height>361</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#Ilan_btn
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 4em;
+padding: 6px;
+
+}
+#Ilan_btn:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+          </property>
+          <property name="text">
+           <string>İlanı Ver</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="Ilanlar_Sayfa">
+         <widget class="QLabel" name="label_17">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>741</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 75 20pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 20px;
+border-color: blue;
+font: italic bold 25px;
+min-width: 10em;
+padding: 16px;</string>
+          </property>
+          <property name="text">
+           <string>İLANLAR</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Yenile">
+          <property name="geometry">
+           <rect>
+            <x>570</x>
+            <y>120</y>
+            <width>171</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#Yenile
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Yenile:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+          </property>
+          <property name="text">
+           <string>Yenile</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="formLayoutWidget_8">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>170</y>
+            <width>711</width>
+            <height>481</height>
+           </rect>
+          </property>
+          <layout class="QFormLayout" name="formLayout_2">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="Ilan_Al1">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#Ilan_Al1
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Ilan_Al1:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+             </property>
+             <property name="text">
+              <string>İlan Al</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="Ilan_Al2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#Ilan_Al2
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Ilan_Al2:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+             </property>
+             <property name="text">
+              <string>İlan Al</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="Ilan_Al3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#Ilan_Al3
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Ilan_Al3:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+             </property>
+             <property name="text">
+              <string>İlan Al</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="Ilan_Al4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#Ilan_Al4
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Ilan_Al4:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+             </property>
+             <property name="text">
+              <string>İlan Al</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QPushButton" name="Ilan_Al5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#Ilan_Al5
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Ilan_Al5:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+             </property>
+             <property name="text">
+              <string>İlan Al</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QTextBrowser" name="Ilan_1">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>75</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255,255,255);</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QTextBrowser" name="Ilan_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>75</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255,255,255);</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QTextBrowser" name="Ilan_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>75</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255,255,255);</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QTextBrowser" name="Ilan_4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>75</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255,255,255);</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QTextBrowser" name="Ilan_5">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>75</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:rgb(255,255,255);</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="VeriEtiket_Sayfa">
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>741</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 75 20pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 20px;
+border-color: blue;
+font: italic bold 25px;
+min-width: 10em;
+padding: 16px;</string>
+          </property>
+          <property name="text">
+           <string>VERİ ETİKET</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>160</y>
+            <width>741</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 75 20pt &quot;Times New Roman&quot;;
+
+
+border-style: outset;
+border-width: 2px;
+border-radius: 20px;
+border-color: white;
+font: italic bold 25px;
+min-width: 10em;
+padding: 16px;</string>
+          </property>
+          <property name="text">
+           <string>Labelimg ile veri etiketlemeye hemen başlayın!</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="labelimg_btn">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>250</y>
+            <width>411</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#labelimg_btn
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 40px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#labelimg_btn:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+          </property>
+          <property name="text">
+           <string>Labelimg</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="VerilenIlanlar_Sayfa">
+         <widget class="QLabel" name="label_36">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>741</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 75 20pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 20px;
+border-color: blue;
+font: italic bold 25px;
+min-width: 10em;
+padding: 16px;</string>
+          </property>
+          <property name="text">
+           <string>VERİLEN İLANLAR</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget_7">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>130</y>
+            <width>681</width>
+            <height>196</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QComboBox" name="comboBox_3"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="V_I_Ara">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">#V_I_Ara
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#V_I_Ara:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+             </property>
+             <property name="text">
+              <string>Seç</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QPushButton" name="Download">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>520</y>
+            <width>231</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#Download
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Download:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+          </property>
+          <property name="text">
+           <string>İlanı Tamamla</string>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="Sonuc_3">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>340</y>
+            <width>681</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#Sonuc_3
+{
+background:rgb(255, 255, 255)
+
+}</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="horizontalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>120</y>
+          <width>701</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QTextEdit" name="textEdit">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(255,255,255);</string>
+           </property>
+           <property name="documentTitle">
+            <string/>
+           </property>
+           <property name="html">
+            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman'; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="placeholderText">
+            <string>Bir kişi aratınız..</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Ara">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>84</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#Ara
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 4em;
+padding: 6px;
+
+}
+#Ara:pressed
+{
+	background-color:rgb(255,255,255);
+}</string>
+           </property>
+           <property name="text">
+            <string>Ara</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Giris">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#Giris
+{
+	border-image:url(:/images/images/bg.jpg);
+}</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="1" alignment="Qt::AlignHCenter|Qt::AlignTop">
+         <widget class="QLabel" name="label">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>28</pointsize>
+            <weight>75</weight>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="tabletTracking">
+           <bool>false</bool>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::DefaultContextMenu</enum>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background:url(:/images/images/bg.jpg)</string>
+          </property>
+          <property name="text">
+           <string>LABELLAB</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+          <property name="wordWrap">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <property name="leftMargin">
+           <number>300</number>
+          </property>
+          <property name="topMargin">
+           <number>100</number>
+          </property>
+          <property name="rightMargin">
+           <number>300</number>
+          </property>
+          <property name="bottomMargin">
+           <number>500</number>
+          </property>
+          <item row="0" column="2" colspan="2">
+           <widget class="QLineEdit" name="mail_ledit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#mail_ledit
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2" colspan="2">
+           <widget class="QLineEdit" name="sifre_ledit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#sifre_ledit
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Times New Roman</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background:url(:/images/LABELLAB/images/bg.jpg);</string>
+            </property>
+            <property name="text">
+             <string>Mail</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="Giris_btn">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>101</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">#Giris_btn
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Giris_btn:pressed
+{
+	background-color:rgb(255,255,255);
+}
+
+</string>
+            </property>
+            <property name="text">
+             <string>Giriş</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_3">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Times New Roman</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background:url(:/images/LABELLAB/images/bg.jpg);</string>
+            </property>
+            <property name="text">
+             <string>Şifre:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="KayitOl_btn">
+            <property name="styleSheet">
+             <string notr="true">#KayitOl_btn
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#KayitOl_btn:pressed
+{
+	background-color:rgb(255,255,255);
+}
+
+</string>
+            </property>
+            <property name="text">
+             <string>Kayit Ol</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="KayitOlPage">
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>781</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="leftMargin">
+          <number>250</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>28</pointsize>
+             <weight>75</weight>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="tabletTracking">
+            <bool>false</bool>
+           </property>
+           <property name="contextMenuPolicy">
+            <enum>Qt::DefaultContextMenu</enum>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:url(:/images/images/bg.jpg)</string>
+           </property>
+           <property name="text">
+            <string>LABELLAB</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::AutoText</enum>
+           </property>
+           <property name="wordWrap">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="formLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>781</width>
+          <height>651</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="1">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="Ad">
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:url(:/images/images/bg.jpg)</string>
+           </property>
+           <property name="text">
+            <string>Ad:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="ad_linedit">
+           <property name="styleSheet">
+            <string notr="true">#ad_linedit
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="Soyad">
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:url(:/images/images/bg.jpg)</string>
+           </property>
+           <property name="text">
+            <string>Soyad:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="soyad_linedit">
+           <property name="styleSheet">
+            <string notr="true">#soyad_linedit
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="Mail">
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:url(:/images/images/bg.jpg)</string>
+           </property>
+           <property name="text">
+            <string>Mail:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="mail_linedit">
+           <property name="styleSheet">
+            <string notr="true">#mail_linedit
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="Sifre">
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:url(:/images/images/bg.jpg)</string>
+           </property>
+           <property name="text">
+            <string>Sifre:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="sifre_linedit">
+           <property name="styleSheet">
+            <string notr="true">#sifre_linedit
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="SifreConfirm">
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:url(:/images/images/bg.jpg)</string>
+           </property>
+           <property name="text">
+            <string>Sifreyi Onayla:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="sifreonay_linedit">
+           <property name="styleSheet">
+            <string notr="true">#sifreonay_linedit
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: white;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: black;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QPushButton" name="Onay">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">#Onay
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#Onay:pressed
+{
+background:white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Onay</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QPushButton" name="GeriDon_btn">
+           <property name="styleSheet">
+            <string notr="true">#GeriDon_btn
+{
+font: 75 14pt &quot;Times New Roman&quot;;
+
+background: beige;
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: blue;
+font: bold 14px;
+min-width: 5em;
+padding: 6px;
+
+}
+#GeriDon_btn:pressed
+{
+background:white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Geri Dön</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>AnaSayfa</sender>
+   <signal>clicked()</signal>
+   <receiver>MainPage</receiver>
+   <slot>AnaSayfaGit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>71</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>22</x>
+     <y>-13</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Alinan_Ilanlar</sender>
+   <signal>clicked()</signal>
+   <receiver>MainPage</receiver>
+   <slot>AlinanIlanlarGit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>185</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>185</x>
+     <y>-13</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Profil</sender>
+   <signal>clicked()</signal>
+   <receiver>MainPage</receiver>
+   <slot>ProfilGit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>300</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>-15</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>IlanVer</sender>
+   <signal>clicked()</signal>
+   <receiver>MainPage</receiver>
+   <slot>IlanVerGit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>405</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>-28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Ilanlar</sender>
+   <signal>clicked()</signal>
+   <receiver>MainPage</receiver>
+   <slot>IlanlarGit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>524</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>520</x>
+     <y>-27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Veri_Etiket</sender>
+   <signal>clicked()</signal>
+   <receiver>MainPage</receiver>
+   <slot>VerisetiEtiketGit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>621</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>622</x>
+     <y>-42</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Verilen_Ilanlar</sender>
+   <signal>clicked()</signal>
+   <receiver>MainPage</receiver>
+   <slot>VerilenIlanlarGit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>750</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>753</x>
+     <y>-44</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>KayitOl_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainPage</receiver>
+   <slot>KayitOlGit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>298</x>
+     <y>-171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-2</x>
+     <y>260</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GeriDon_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainPage</receiver>
+   <slot>GiriseGit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>110</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>486</x>
+     <y>772</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Giris_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainPage</receiver>
+   <slot>Giris_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>-171</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>905</x>
+     <y>256</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>labelimg_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>MainPage</receiver>
+   <slot>Labelimg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>415</x>
+     <y>447</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>988</x>
+     <y>448</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Cikis</sender>
+   <signal>clicked()</signal>
+   <receiver>MainPage</receiver>
+   <slot>Cikis()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>677</x>
+     <y>713</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>699</x>
+     <y>789</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>AboutMe</sender>
+   <signal>clicked()</signal>
+   <receiver>MainPage</receiver>
+   <slot>Fonksiyon()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>640</x>
+     <y>604</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>889</x>
+     <y>604</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>Alinan_Ilanlar_Pressed()</slot>
+  <slot>Profil_Pressed()</slot>
+  <slot>IlanVer_Pressed()</slot>
+  <slot>Ilanlar_Pressed()</slot>
+  <slot>VeriEtiket_Pressed()</slot>
+  <slot>Giris_clicked()</slot>
+  <slot>AnaSayfaGit()</slot>
+  <slot>AlinanIlanlarGit()</slot>
+  <slot>ProfilGit()</slot>
+  <slot>IlanVerGit()</slot>
+  <slot>IlanlarGit()</slot>
+  <slot>VerisetiEtiketGit()</slot>
+  <slot>VerilenIlanlarGit()</slot>
+  <slot>KayitOlGit()</slot>
+  <slot>GiriseGit()</slot>
+  <slot>slot1()</slot>
+  <slot>Labelimg()</slot>
+  <slot>Cikis()</slot>
+  <slot>Fonksiyon()</slot>
+ </slots>
+</ui>
