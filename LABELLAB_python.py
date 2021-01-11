@@ -267,6 +267,11 @@ class Ui_MainPage(object):
 "    background-color:rgb(255,255,255);\n"
 "}")
         self.Cikis.setObjectName("Cikis")
+        self.label_19 = QtWidgets.QLabel(self.Ana_Sayfa)
+        self.label_19.setGeometry(QtCore.QRect(170, 30, 461, 461))
+        self.label_19.setStyleSheet("background:url(:/images/Adsız.png);")
+        self.label_19.setText("")
+        self.label_19.setObjectName("label_19")
         self.Sayfalar.addWidget(self.Ana_Sayfa)
         self.AlinanIlanlar_Sayfa = QtWidgets.QWidget()
         self.AlinanIlanlar_Sayfa.setObjectName("AlinanIlanlar_Sayfa")
@@ -1151,54 +1156,6 @@ class Ui_MainPage(object):
         self.Sonuc_3.setReadOnly(True)
         self.Sonuc_3.setObjectName("Sonuc_3")
         self.Sayfalar.addWidget(self.VerilenIlanlar_Sayfa)
-        self.horizontalLayoutWidget_2 = QtWidgets.QWidget(self.Uygulama)
-        self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(50, 120, 701, 61))
-        self.horizontalLayoutWidget_2.setObjectName("horizontalLayoutWidget_2")
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_2)
-        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.textEdit = QtWidgets.QTextEdit(self.horizontalLayoutWidget_2)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.textEdit.sizePolicy().hasHeightForWidth())
-        self.textEdit.setSizePolicy(sizePolicy)
-        self.textEdit.setMaximumSize(QtCore.QSize(16777215, 16777215))
-        font = QtGui.QFont()
-        font.setFamily("Times New Roman")
-        font.setPointSize(14)
-        self.textEdit.setFont(font)
-        self.textEdit.setStyleSheet("background:rgb(255,255,255);")
-        self.textEdit.setDocumentTitle("")
-        self.textEdit.setObjectName("textEdit")
-        self.horizontalLayout_2.addWidget(self.textEdit)
-        self.Ara = QtWidgets.QPushButton(self.horizontalLayoutWidget_2)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.Ara.sizePolicy().hasHeightForWidth())
-        self.Ara.setSizePolicy(sizePolicy)
-        self.Ara.setMinimumSize(QtCore.QSize(84, 50))
-        self.Ara.setStyleSheet("#Ara\n"
-"{\n"
-"font: 75 14pt \"Times New Roman\";\n"
-"\n"
-"background: beige;\n"
-"border-style: outset;\n"
-"border-width: 2px;\n"
-"border-radius: 10px;\n"
-"border-color: blue;\n"
-"font: bold 14px;\n"
-"min-width: 4em;\n"
-"padding: 6px;\n"
-"\n"
-"}\n"
-"#Ara:pressed\n"
-"{\n"
-"    background-color:rgb(255,255,255);\n"
-"}")
-        self.Ara.setObjectName("Ara")
-        self.horizontalLayout_2.addWidget(self.Ara)
         self.App.addWidget(self.Uygulama)
         self.Giris = QtWidgets.QWidget()
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Preferred)
@@ -1585,7 +1542,7 @@ class Ui_MainPage(object):
 
         self.retranslateUi(MainPage)
         self.App.setCurrentIndex(0)
-        self.Sayfalar.setCurrentIndex(2)
+        self.Sayfalar.setCurrentIndex(0)
         self.AnaSayfa.clicked.connect(MainPage.AnaSayfaGit)
         self.Alinan_Ilanlar.clicked.connect(MainPage.AlinanIlanlarGit)
         self.Profil.clicked.connect(MainPage.ProfilGit)
@@ -1649,13 +1606,6 @@ class Ui_MainPage(object):
         self.label_36.setText(_translate("MainPage", "VERİLEN İLANLAR"))
         self.V_I_Ara.setText(_translate("MainPage", "Seç"))
         self.Download.setText(_translate("MainPage", "İlanı Tamamla"))
-        self.textEdit.setHtml(_translate("MainPage", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Times New Roman\'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"justify\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.textEdit.setPlaceholderText(_translate("MainPage", "Bir kişi aratınız.."))
-        self.Ara.setText(_translate("MainPage", "Ara"))
         self.label.setText(_translate("MainPage", "LABELLAB"))
         self.label_2.setText(_translate("MainPage", "Mail"))
         self.Giris_btn.setText(_translate("MainPage", "Giriş"))
