@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:/Users/ABRA/Desktop/Dosyalarım/LABELLAB/LABELLAB.ui'
+# Form implementation generated from reading ui file 'C:/Users/90531/Desktop/LABELLAB/LABELLAB.ui'
 #
 # Created by: PyQt5 UI code generator 5.6
 #
@@ -267,11 +267,6 @@ class Ui_MainPage(object):
 "    background-color:rgb(255,255,255);\n"
 "}")
         self.Cikis.setObjectName("Cikis")
-        self.label_19 = QtWidgets.QLabel(self.Ana_Sayfa)
-        self.label_19.setGeometry(QtCore.QRect(170, 30, 461, 461))
-        self.label_19.setStyleSheet("background:url(:/images/Adsız.png);")
-        self.label_19.setText("")
-        self.label_19.setObjectName("label_19")
         self.Sayfalar.addWidget(self.Ana_Sayfa)
         self.AlinanIlanlar_Sayfa = QtWidgets.QWidget()
         self.AlinanIlanlar_Sayfa.setObjectName("AlinanIlanlar_Sayfa")
@@ -570,7 +565,7 @@ class Ui_MainPage(object):
 "}")
         self.Change_Profile.setObjectName("Change_Profile")
         self.formLayoutWidget_9 = QtWidgets.QWidget(self.Profil_Sayfa)
-        self.formLayoutWidget_9.setGeometry(QtCore.QRect(390, 310, 361, 143))
+        self.formLayoutWidget_9.setGeometry(QtCore.QRect(390, 310, 361, 147))
         self.formLayoutWidget_9.setObjectName("formLayoutWidget_9")
         self.formLayout_9 = QtWidgets.QFormLayout(self.formLayoutWidget_9)
         self.formLayout_9.setContentsMargins(0, 0, 0, 0)
@@ -582,24 +577,6 @@ class Ui_MainPage(object):
         self.label_6.setFont(font)
         self.label_6.setObjectName("label_6")
         self.formLayout_9.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_6)
-        self.Hakkimda = QtWidgets.QTextEdit(self.formLayoutWidget_9)
-        self.Hakkimda.setStyleSheet("#Hakkimda\n"
-"{\n"
-"font: 75 14pt \"Times New Roman\";\n"
-"\n"
-"background: white;\n"
-"border-style: outset;\n"
-"border-width: 2px;\n"
-"border-radius: 10px;\n"
-"border-color: black;\n"
-"font: bold 14px;\n"
-"min-width: 5em;\n"
-"padding: 6px;\n"
-"\n"
-"}\n"
-"")
-        self.Hakkimda.setObjectName("Hakkimda")
-        self.formLayout_9.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.Hakkimda)
         self.AboutMe = QtWidgets.QPushButton(self.formLayoutWidget_9)
         self.AboutMe.setStyleSheet("#AboutMe\n"
 "{\n"
@@ -620,7 +597,31 @@ class Ui_MainPage(object):
 "    background-color:rgb(255,255,255);\n"
 "}")
         self.AboutMe.setObjectName("AboutMe")
-        self.formLayout_9.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.AboutMe)
+        self.formLayout_9.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.AboutMe)
+        self.Hakkimda = QtWidgets.QLineEdit(self.formLayoutWidget_9)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.Hakkimda.sizePolicy().hasHeightForWidth())
+        self.Hakkimda.setSizePolicy(sizePolicy)
+        self.Hakkimda.setMinimumSize(QtCore.QSize(101, 100))
+        self.Hakkimda.setStyleSheet("#Hakkimda\n"
+"{\n"
+"font: 75 14pt \"Times New Roman\";\n"
+"\n"
+"background: white;\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 10px;\n"
+"border-color: black;\n"
+"font: bold 14px;\n"
+"min-width: 5em;\n"
+"padding: 6px;\n"
+"\n"
+"}\n"
+"")
+        self.Hakkimda.setObjectName("Hakkimda")
+        self.formLayout_9.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.Hakkimda)
         self.Sayfalar.addWidget(self.Profil_Sayfa)
         self.IlanVer_Sayfa = QtWidgets.QWidget()
         self.IlanVer_Sayfa.setObjectName("IlanVer_Sayfa")
@@ -762,7 +763,7 @@ class Ui_MainPage(object):
         self.VeriSeti_bilgi.setObjectName("VeriSeti_bilgi")
         self.formLayout_8.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.VeriSeti_bilgi)
         self.Ilan_btn = QtWidgets.QPushButton(self.IlanVer_Sayfa)
-        self.Ilan_btn.setGeometry(QtCore.QRect(530, 150, 211, 361))
+        self.Ilan_btn.setGeometry(QtCore.QRect(530, 120, 211, 361))
         self.Ilan_btn.setStyleSheet("#Ilan_btn\n"
 "{\n"
 "font: 75 14pt \"Times New Roman\";\n"
@@ -1092,9 +1093,9 @@ class Ui_MainPage(object):
         self.horizontalLayout_7 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_7)
         self.horizontalLayout_7.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_7.setObjectName("horizontalLayout_7")
-        self.comboBox_3 = QtWidgets.QComboBox(self.horizontalLayoutWidget_7)
-        self.comboBox_3.setObjectName("comboBox_3")
-        self.horizontalLayout_7.addWidget(self.comboBox_3)
+        self.VerIlCombobox = QtWidgets.QComboBox(self.horizontalLayoutWidget_7)
+        self.VerIlCombobox.setObjectName("VerIlCombobox")
+        self.horizontalLayout_7.addWidget(self.VerIlCombobox)
         self.V_I_Ara = QtWidgets.QPushButton(self.horizontalLayoutWidget_7)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -1148,8 +1149,10 @@ class Ui_MainPage(object):
         font.setFamily("Times New Roman")
         font.setPointSize(12)
         self.Sonuc_3.setFont(font)
+        self.Sonuc_3.setAutoFillBackground(True)
         self.Sonuc_3.setStyleSheet("#Sonuc_3\n"
 "{\n"
+"\n"
 "background:rgb(255, 255, 255)\n"
 "\n"
 "}")
@@ -1355,16 +1358,28 @@ class Ui_MainPage(object):
         self.formLayout = QtWidgets.QFormLayout(self.formLayoutWidget)
         self.formLayout.setContentsMargins(0, 0, 0, 0)
         self.formLayout.setObjectName("formLayout")
-        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.formLayout.setItem(0, QtWidgets.QFormLayout.FieldRole, spacerItem)
-        self.Ad = QtWidgets.QLabel(self.formLayoutWidget)
-        font = QtGui.QFont()
-        font.setFamily("Times New Roman")
-        font.setPointSize(14)
-        self.Ad.setFont(font)
-        self.Ad.setStyleSheet("background:url(:/images/images/bg.jpg)")
-        self.Ad.setObjectName("Ad")
-        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.Ad)
+        self.GeriDon_btn = QtWidgets.QPushButton(self.formLayoutWidget)
+        self.GeriDon_btn.setStyleSheet("#GeriDon_btn\n"
+"{\n"
+"font: 75 14pt \"Times New Roman\";\n"
+"\n"
+"background: beige;\n"
+"border-style: outset;\n"
+"border-width: 2px;\n"
+"border-radius: 10px;\n"
+"border-color: blue;\n"
+"font: bold 14px;\n"
+"min-width: 5em;\n"
+"padding: 6px;\n"
+"\n"
+"}\n"
+"#GeriDon_btn:pressed\n"
+"{\n"
+"background:white;\n"
+"}\n"
+"")
+        self.GeriDon_btn.setObjectName("GeriDon_btn")
+        self.formLayout.setWidget(10, QtWidgets.QFormLayout.FieldRole, self.GeriDon_btn)
         self.ad_linedit = QtWidgets.QLineEdit(self.formLayoutWidget)
         self.ad_linedit.setStyleSheet("#ad_linedit\n"
 "{\n"
@@ -1382,7 +1397,15 @@ class Ui_MainPage(object):
 "}\n"
 "")
         self.ad_linedit.setObjectName("ad_linedit")
-        self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.ad_linedit)
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.ad_linedit)
+        self.Ad = QtWidgets.QLabel(self.formLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(14)
+        self.Ad.setFont(font)
+        self.Ad.setStyleSheet("background:url(:/images/images/bg.jpg)")
+        self.Ad.setObjectName("Ad")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.Ad)
         self.Soyad = QtWidgets.QLabel(self.formLayoutWidget)
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -1390,7 +1413,7 @@ class Ui_MainPage(object):
         self.Soyad.setFont(font)
         self.Soyad.setStyleSheet("background:url(:/images/images/bg.jpg)")
         self.Soyad.setObjectName("Soyad")
-        self.formLayout.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.Soyad)
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.Soyad)
         self.soyad_linedit = QtWidgets.QLineEdit(self.formLayoutWidget)
         self.soyad_linedit.setStyleSheet("#soyad_linedit\n"
 "{\n"
@@ -1408,7 +1431,7 @@ class Ui_MainPage(object):
 "}\n"
 "")
         self.soyad_linedit.setObjectName("soyad_linedit")
-        self.formLayout.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.soyad_linedit)
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.soyad_linedit)
         self.Mail = QtWidgets.QLabel(self.formLayoutWidget)
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -1416,7 +1439,7 @@ class Ui_MainPage(object):
         self.Mail.setFont(font)
         self.Mail.setStyleSheet("background:url(:/images/images/bg.jpg)")
         self.Mail.setObjectName("Mail")
-        self.formLayout.setWidget(4, QtWidgets.QFormLayout.LabelRole, self.Mail)
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.Mail)
         self.mail_linedit = QtWidgets.QLineEdit(self.formLayoutWidget)
         self.mail_linedit.setStyleSheet("#mail_linedit\n"
 "{\n"
@@ -1434,7 +1457,7 @@ class Ui_MainPage(object):
 "}\n"
 "")
         self.mail_linedit.setObjectName("mail_linedit")
-        self.formLayout.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.mail_linedit)
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.mail_linedit)
         self.Sifre = QtWidgets.QLabel(self.formLayoutWidget)
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
@@ -1442,7 +1465,7 @@ class Ui_MainPage(object):
         self.Sifre.setFont(font)
         self.Sifre.setStyleSheet("background:url(:/images/images/bg.jpg)")
         self.Sifre.setObjectName("Sifre")
-        self.formLayout.setWidget(5, QtWidgets.QFormLayout.LabelRole, self.Sifre)
+        self.formLayout.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.Sifre)
         self.sifre_linedit = QtWidgets.QLineEdit(self.formLayoutWidget)
         self.sifre_linedit.setStyleSheet("#sifre_linedit\n"
 "{\n"
@@ -1460,15 +1483,7 @@ class Ui_MainPage(object):
 "}\n"
 "")
         self.sifre_linedit.setObjectName("sifre_linedit")
-        self.formLayout.setWidget(5, QtWidgets.QFormLayout.FieldRole, self.sifre_linedit)
-        self.SifreConfirm = QtWidgets.QLabel(self.formLayoutWidget)
-        font = QtGui.QFont()
-        font.setFamily("Times New Roman")
-        font.setPointSize(14)
-        self.SifreConfirm.setFont(font)
-        self.SifreConfirm.setStyleSheet("background:url(:/images/images/bg.jpg)")
-        self.SifreConfirm.setObjectName("SifreConfirm")
-        self.formLayout.setWidget(6, QtWidgets.QFormLayout.LabelRole, self.SifreConfirm)
+        self.formLayout.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.sifre_linedit)
         self.sifreonay_linedit = QtWidgets.QLineEdit(self.formLayoutWidget)
         self.sifreonay_linedit.setStyleSheet("#sifreonay_linedit\n"
 "{\n"
@@ -1486,7 +1501,15 @@ class Ui_MainPage(object):
 "}\n"
 "")
         self.sifreonay_linedit.setObjectName("sifreonay_linedit")
-        self.formLayout.setWidget(6, QtWidgets.QFormLayout.FieldRole, self.sifreonay_linedit)
+        self.formLayout.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.sifreonay_linedit)
+        self.SifreConfirm = QtWidgets.QLabel(self.formLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(14)
+        self.SifreConfirm.setFont(font)
+        self.SifreConfirm.setStyleSheet("background:url(:/images/images/bg.jpg)")
+        self.SifreConfirm.setObjectName("SifreConfirm")
+        self.formLayout.setWidget(4, QtWidgets.QFormLayout.LabelRole, self.SifreConfirm)
         self.Onay = QtWidgets.QPushButton(self.formLayoutWidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -1513,36 +1536,14 @@ class Ui_MainPage(object):
 "}\n"
 "")
         self.Onay.setObjectName("Onay")
-        self.formLayout.setWidget(7, QtWidgets.QFormLayout.FieldRole, self.Onay)
-        self.GeriDon_btn = QtWidgets.QPushButton(self.formLayoutWidget)
-        self.GeriDon_btn.setStyleSheet("#GeriDon_btn\n"
-"{\n"
-"font: 75 14pt \"Times New Roman\";\n"
-"\n"
-"background: beige;\n"
-"border-style: outset;\n"
-"border-width: 2px;\n"
-"border-radius: 10px;\n"
-"border-color: blue;\n"
-"font: bold 14px;\n"
-"min-width: 5em;\n"
-"padding: 6px;\n"
-"\n"
-"}\n"
-"#GeriDon_btn:pressed\n"
-"{\n"
-"background:white;\n"
-"}\n"
-"")
-        self.GeriDon_btn.setObjectName("GeriDon_btn")
-        self.formLayout.setWidget(8, QtWidgets.QFormLayout.FieldRole, self.GeriDon_btn)
+        self.formLayout.setWidget(5, QtWidgets.QFormLayout.FieldRole, self.Onay)
         self.App.addWidget(self.KayitOlPage)
         self.gridLayout.addWidget(self.App, 0, 0, 1, 1)
         MainPage.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainPage)
         self.App.setCurrentIndex(0)
-        self.Sayfalar.setCurrentIndex(0)
+        self.Sayfalar.setCurrentIndex(1)
         self.AnaSayfa.clicked.connect(MainPage.AnaSayfaGit)
         self.Alinan_Ilanlar.clicked.connect(MainPage.AlinanIlanlarGit)
         self.Profil.clicked.connect(MainPage.ProfilGit)
@@ -1555,7 +1556,18 @@ class Ui_MainPage(object):
         self.Giris_btn.clicked.connect(MainPage.Giris_clicked)
         self.labelimg_btn.clicked.connect(MainPage.Labelimg)
         self.Cikis.clicked.connect(MainPage.Cikis)
-        self.AboutMe.clicked.connect(MainPage.Fonksiyon)
+        self.Onay.clicked.connect(MainPage.kayit_ol)
+        self.AboutMe.clicked.connect(MainPage.hakkimda_gir)
+        self.Ilan_btn.clicked.connect(MainPage.ilan_ver)
+        self.Ilan_Al1.clicked.connect(MainPage.Ilan_Al1)
+        self.Ilan_Al2.clicked.connect(MainPage.Ilan_Al2)
+        self.Ilan_Al3.clicked.connect(MainPage.Ilan_Al3)
+        self.Ilan_Al4.clicked.connect(MainPage.Ilan_Al4)
+        self.Ilan_Al5.clicked.connect(MainPage.Ilan_Al5)
+        self.A_I_Ara.clicked.connect(MainPage.ilan_sec)
+        self.V_I_Ara.clicked.connect(MainPage.ilan_sec2)
+        self.Download.clicked.connect(MainPage.ilan_tamamlandi)
+        self.Upload.clicked.connect(MainPage.ilan_tamamlandi)
         QtCore.QMetaObject.connectSlotsByName(MainPage)
 
     def retranslateUi(self, MainPage):
@@ -1612,12 +1624,12 @@ class Ui_MainPage(object):
         self.label_3.setText(_translate("MainPage", "Şifre:"))
         self.KayitOl_btn.setText(_translate("MainPage", "Kayit Ol"))
         self.label_5.setText(_translate("MainPage", "LABELLAB"))
+        self.GeriDon_btn.setText(_translate("MainPage", "Geri Dön"))
         self.Ad.setText(_translate("MainPage", "Ad:"))
         self.Soyad.setText(_translate("MainPage", "Soyad:"))
         self.Mail.setText(_translate("MainPage", "Mail:"))
         self.Sifre.setText(_translate("MainPage", "Sifre:"))
         self.SifreConfirm.setText(_translate("MainPage", "Sifreyi Onayla:"))
         self.Onay.setText(_translate("MainPage", "Onay"))
-        self.GeriDon_btn.setText(_translate("MainPage", "Geri Dön"))
 
 import images_rc
